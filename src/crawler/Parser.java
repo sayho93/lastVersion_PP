@@ -35,7 +35,9 @@ public class Parser {
                     "발주기관\n"+ "조달방식\n"+ "유형\n"+ "공사명\n"+ "게시일시\n"+ "발주시기\n"+
                     "등록자\n"+ "고시공고번호\n" + "관서명\n"+ "계약명\n"+ "계약금액\n"+
                     "계약일\n"+ "계약대상자\n"+ "글번호\n"+ "입찰번호\n"+ "입찰정보\n"+
-                    "사업명\n"+ "부서명\n" + "계약\n"+ "낙찰예정자\n"+ "입찰서마감일시\n" + "기초금액\n";
+                    "사업명\n"+ "부서명\n" + "계약\n"+ "입찰서마감일시\n" + "기초금액\n"+"개찰일시\n"+
+                    "낙찰예정자\n"+"투찰금액(원)\n"+"투찰률(%)\n"+"참가수\n" +"재입찰번호\n"+"입찰분류\n" +
+                    "진행사항\n" + "진행상황\n";
     public static final int CODE_NOTYET=2, CODE_CANNOT_FIND=1, CODE_SUCCESS=0;
     private static final int TIMEOUT=5000;
     private int tableIndex=-1;
