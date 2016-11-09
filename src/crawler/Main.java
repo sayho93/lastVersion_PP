@@ -19,7 +19,11 @@ public class Main {
         dbmng.close();
 
         for(i = 0; i < urls.length; i++){
-            parser[i] = new Parser(urls[i]);
+            try {
+                parser[i] = new Parser(urls[i]);
+            }catch(Exception e){
+                System.out.println("security exception or connection problem occured");
+            }
             parser[i].setType(status[i]);
         }
         for(i = 0; i < urls.length; i++){
